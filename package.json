@@ -1,0 +1,22 @@
+{
+  "name": "moonlit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://armorangel:aa007650@github.com/armorangel/moonlit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armorangel/moonlit/issues"
+  },
+  "homepage": "https://github.com/armorangel/moonlit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
