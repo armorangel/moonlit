@@ -6,7 +6,8 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-	res.send({hello: 'world'});
+	res.render('index');
+	//res.send({hello: 'world'});
 	console.log("home");
 	console.log(111);
 	console.log(222);
