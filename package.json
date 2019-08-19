@@ -19,5 +19,8 @@
   "homepage": "https://github.com/armorangel/moonlit#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "engines":{
+    "node": "v10.15.3",
+    "npm": "6.9.0"
 }
