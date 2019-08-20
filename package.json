@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/armorangel/moonlit#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "yarn": "^1.17.3"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
   }
 }
