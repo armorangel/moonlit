@@ -5,15 +5,25 @@ app.set('view engine', 'jade');
 app.set('views', './views');
 app.use(express.static('public'));
 
+/*Main Page*/
 app.get('/', (req, res) => {
 	res.render('index');
 	//res.send({hello: 'world'});
 	console.log("home");
-	console.log(111);
-	console.log(222);
-	console.log(333);
-	console.log(444);
 });
+
+/*Login Page*/
+app.get('/login', (req, res) => {
+	res.render('login');
+	console.log('login');
+});
+
+/*Notice Page*/
+/*Bulletin Page*/
+/*Schedule*/
+
+
+
 
 app.get('/template', function(req, res){
   res.render('temp', {time:Date(), title:'Jade'});
