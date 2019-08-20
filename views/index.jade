@@ -1,28 +1,35 @@
 html
 	head
 		title jade
+		link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
 		link(rel='stylesheet', href='./css/index.css')
 	body
-		button(class="tablink", onlick="openPage('Home', this, 'red')") Home
-		button(class="tablink", onlick="openPage('News', this, 'green')", id="defaultOpen") News
-		button(class="tablink", onlick="openPage('Contact', this, 'blue')") Contact
-		button(class="tablink", onlick="openPage('About', this, 'orange')") About
+		div(class="w3-container" id="wrapper")
 		
-		div(id="Home" class="tabcontent")
-			h3 Home
-			p Home is where the heart is..
+			header(class="w3-container w3-teal")
+				h1 Header
 			
-		div(id="News" class="tabcontent")
-			h3 News
-			p Some news this fine day!
-			
-		div(id="Contact" class="tabcontent")
-			h3 Contact
-			p Get in touch, or swing by for a cup of coffee.
-			
-		div(id="About" class="tabcontent")
-			h3 About
-			p Who we are and what we do.
+				p The w3-container class is an important w3.CSS class.
+				button(class="tablink", onclick="openPage('Home', this, 'red')") Home
+				button(class="tablink", onclick="openPage('News', this, 'green')", id="defaultOpen") News
+				button(class="tablink", onclick="openPage('Contact', this, 'blue')") Contact
+				button(class="tablink", onclick="openPage('About', this, 'orange')") About
+
+			div(id="Home" class="tabcontent")
+				h3 Home
+				p Home is where the heart is..
+
+			div(id="News" class="tabcontent")
+				h3 News
+				p Some news this fine day!
+
+			div(id="Contact" class="tabcontent")
+				h3 Contact
+				p Get in touch, or swing by for a cup of coffee.
+
+			div(id="About" class="tabcontent")
+				h3 About
+				p Who we are and what we do.
 			
 		script(src='./js/index.js')
 		

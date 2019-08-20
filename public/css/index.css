@@ -5,6 +5,11 @@ body, html {
 	font-family: Arial;
 }
 
+/*Main Size*/
+#wrapper {
+	width: 50%;
+	margin: auto;
+}
 /* Style tab links */
 .tablink {
 	background-color: #555;
@@ -30,7 +35,7 @@ body, html {
 	height: 100%;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home {background-color: #ffe6e6;}
+#News {background-color: #ffe6e6;}
+#Contact {background-color: #ffe6e6;}
+#About {background-color: #ffe6e6;}
