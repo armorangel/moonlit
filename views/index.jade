@@ -11,14 +11,15 @@ html
 			
 				p The w3-container class is an important w3.CSS class.
 				
-				button(class="tablink", onclick="openPage('Home', this, 'red')") Home
-				button(class="tablink", onclick="openPage('News', this, 'green')", id="defaultOpen") News
-				button(class="tablink", onclick="openPage('Contact', this, 'blue')") Contact
-				button(class="tablink", onclick="openPage('About', this, 'orange')") About
+				button(class="tablink", onclick="openPage('bbs', this, 'red')") Home
+				button(class="tablink", onclick="openPage('temp', this, 'green')", id="defaultOpen") News
+				button(class="tablink", onclick="openPage('Home', this, 'blue')") Contact
+				button(class="tablink", onclick="openPage('Home', this, 'orange')") About
 
 			div(id="Home" class="tabcontent")
-				h3 Home
-				p Home is where the heart is..
+				//h3 Home
+				//p Home is where the heart is..
+				!{contents}
 
 			div(id="News" class="tabcontent")
 				h3 News
