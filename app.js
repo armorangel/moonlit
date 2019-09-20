@@ -1,37 +1,41 @@
 const express = require('express');
 const app = express();
 
-app.set('view engine', 'jade');
+
+
+
+
+//app.set('view engine', 'jade');
 app.set('views', './views');
 app.use(express.static('public'));
 
 /*Main Page*/
+
+
 app.get('/', (req, res) => {
-	res.render('index');
+	//res.render('index');
+	console.log(__dirname);
+	res.sendFile(__dirname + '/views/main_ex.html');
+	
 	//res.send({hello: 'world'});
 	console.log("home");
 });
 
+
 /*Login Page*/
+/*
 app.get('/login', (req, res) => {
 	res.render('login');
 	console.log('login');
 });
+*/
 
 /*Notice Page*/
 /*Bulletin Page*/
+/*
 app.get('/bbs', function(req, res) {
 	
-	/*
-	var data = [{a:'aa1', b:'bb11'}
-			  ,{a:'aa2', b:'bb2'}
-			  ,{a:'aa3', b:'bb3'}
-			  ,{a:'aa4', b:'bb4'}
-			  ,{a:'aa5', b:'bb5'}
-			  ,{a:'aa6', b:'bb6'}];
-	*/
 
-	//var data = {result: 'data!'};
 	
 	var data = {result: [
 		{a:'a1', b:'b1'}
@@ -50,18 +54,9 @@ app.get('/bbs', function(req, res) {
 });
 
 
+
 app.get('/temp', function(req, res) {
 	
-	/*
-	var data = [{a:'aa1', b:'bb11'}
-			  ,{a:'aa2', b:'bb2'}
-			  ,{a:'aa3', b:'bb3'}
-			  ,{a:'aa4', b:'bb4'}
-			  ,{a:'aa5', b:'bb5'}
-			  ,{a:'aa6', b:'bb6'}];
-	*/
-
-	//var data = {result: 'data!'};
 	
 	var data = {result: [
 		{a:'a1', b:'b1'}
@@ -79,14 +74,14 @@ app.get('/temp', function(req, res) {
 	});
 });
 
-
+*/
 
 /*Schedule*/
 
 
 
 //////////////////////////////////////////////
-
+/*
 app.get('/template', function(req, res) {
   res.render('temp', {time:Date(), title:'Jade'});
 });
@@ -115,7 +110,8 @@ app.get('/dynamic', function(req, res) {
   </html>`;
   res.send(output);
 });
-
+*/
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT);
+

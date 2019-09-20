@@ -4,8 +4,22 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 		<title>Angular | TodoMVC</title>
-	</head>
-	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		
+		<script src="js/controllers/TodomvcController.js"></script>
+		
+		
+	</head>
+	
+	<body >
+<body ng-app="todomvc">
+<div ng-controller="TodomvcCtrl">
+  <h1>{{ message }}</h1> <!-- "Hello world!" -->
+</div>
+</body>
+		
+		
+				
 	</body>
+
 </html>
